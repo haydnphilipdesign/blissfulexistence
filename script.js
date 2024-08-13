@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     const contactForm = document.getElementById('contact-form');
-    const infoForm = document.getElementById('info-form');
-    const uploadForm = document.getElementById('upload-form');
     const loginForm = document.getElementById('login-form');
 
     // Contact Form
@@ -9,36 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
             if (validateForm(contactForm)) {
-                // Here you would typically send the form data to a server
                 alert('Thank you for your message. We will get back to you soon!');
                 contactForm.reset();
-            }
-        });
-    }
-
-    // Information Gathering Form
-    if (infoForm) {
-        infoForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            if (validateForm(infoForm)) {
-                // Here you would typically send the form data to a server
-                alert('Thank you for providing your information. We will review it and contact you soon.');
-                infoForm.reset();
-            }
-        });
-    }
-
-    // File Upload Form
-    if (uploadForm) {
-        uploadForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const fileInput = document.getElementById('file-input');
-            if (fileInput.files.length > 0) {
-                // Here you would typically handle file upload to a server
-                alert('File uploaded successfully.');
-                uploadForm.reset();
-            } else {
-                alert('Please select a file to upload.');
             }
         });
     }
@@ -48,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
         loginForm.addEventListener('submit', (e) => {
             e.preventDefault();
             if (validateForm(loginForm)) {
-                // Here you would typically handle authentication
                 alert('Login successful.');
                 document.getElementById('login-form').style.display = 'none';
                 document.getElementById('client-dashboard').style.display = 'block';
@@ -93,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Simulated client dashboard data (replace with actual data fetching in a real application)
+    // Simulated client dashboard data
     const simulateClientDashboard = () => {
         const upcomingSessions = document.getElementById('upcoming-sessions');
         const documents = document.getElementById('documents');
@@ -119,6 +88,5 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Call this function when the client successfully logs in
-    // For demo purposes, we're calling it here. In a real application, call this after successful authentication
     simulateClientDashboard();
 });
