@@ -245,7 +245,7 @@ footer {
     padding: 1rem 0;
     margin-top: 2rem;
     background-image: url('assets/images/footer.jpg');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 /* Responsive Design */
