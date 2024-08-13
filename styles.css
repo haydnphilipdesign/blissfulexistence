@@ -181,6 +181,12 @@ main {
 .testimonial {
     text-align: center;
     padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-speed) ease;
+}
   /*  background-image: url('assets/images/testimonials-background.jpg');
     background-size: cover;
     background-position: center; */
