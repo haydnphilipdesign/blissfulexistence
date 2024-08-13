@@ -44,8 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (input.hasAttribute('required') && !input.value.trim()) {
                 isValid = false;
                 input.classList.add('error');
+                input.setAttribute('aria-invalid', 'true');
             } else {
                 input.classList.remove('error');
+                input.removeAttribute('aria-invalid');
             }
         });
 
