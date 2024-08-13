@@ -54,39 +54,32 @@ document.addEventListener('DOMContentLoaded', () => {
         return isValid;
     };
 
-    // Apply validation to all forms
-    document.querySelectorAll('form').forEach(form => {
-        form.addEventListener('submit', (e) => {
-            if (!validateForm(form)) {
-                e.preventDefault();
-                alert('Please fill in all required fields.');
-            }
-        });
-    });
-
     // Simulated client dashboard data
     const simulateClientDashboard = () => {
         const upcomingSessions = document.getElementById('upcoming-sessions');
         const documents = document.getElementById('documents');
         const messages = document.getElementById('messages');
 
-        // Simulated upcoming sessions
-        upcomingSessions.innerHTML += `
-            <p>Equine Gestalt Therapy - August 15, 2024, 2:00 PM</p>
-            <p>Holistic Healing Session - August 22, 2024, 10:00 AM</p>
-        `;
+        if (upcomingSessions) {
+            upcomingSessions.innerHTML += `
+                <p>Equine Gestalt Therapy - August 15, 2024, 2:00 PM</p>
+                <p>Holistic Healing Session - August 22, 2024, 10:00 AM</p>
+            `;
+        }
 
-        // Simulated documents
-        documents.innerHTML += `
-            <p><a href="#">Therapy Guide.pdf</a></p>
-            <p><a href="#">Session Notes - August 1, 2024.docx</a></p>
-        `;
+        if (documents) {
+            documents.innerHTML += `
+                <p><a href="#">Therapy Guide.pdf</a></p>
+                <p><a href="#">Session Notes - August 1, 2024.docx</a></p>
+            `;
+        }
 
-        // Simulated messages
-        messages.innerHTML += `
-            <p>New message from your therapist - August 10, 2024</p>
-            <p>Appointment confirmation - August 8, 2024</p>
-        `;
+        if (messages) {
+            messages.innerHTML += `
+                <p>New message from your therapist - August 10, 2024</p>
+                <p>Appointment confirmation - August 8, 2024</p>
+            `;
+        }
     };
 
     // Call this function when the client successfully logs in
