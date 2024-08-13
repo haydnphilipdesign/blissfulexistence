@@ -181,9 +181,9 @@ main {
 .testimonial {
     text-align: center;
     padding: 2rem;
-    background-image: url('assets/images/testimonials-background.jpg');
+  /*  background-image: url('assets/images/testimonials-background.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center; */
 }
 
 blockquote {
@@ -228,7 +228,7 @@ button:hover {
 
 /* Client Portal */
 #client-dashboard {
-  /*  background-color: white; */
+    background-color: white; 
     border-radius: 10px;
     padding: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
