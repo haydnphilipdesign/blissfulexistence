@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blissful Existence Healing Acres</title>
+    <title>Blissful Existence Healing Acres - Equine Gestalt Therapy</title>
+    <meta name="description" content="Discover transformative equine gestalt therapy and holistic healing at Blissful Existence Healing Acres. Experience personal growth and emotional healing through our unique services.">
     <link rel="stylesheet" href="styles.css">
-    <meta name="description" content="Discover transformative equine gestalt therapy and holistic healing services.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <nav aria-label="Main Navigation">
+        <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -23,10 +24,11 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <section class="hero" id="home">
+        <section id="home" class="hero">
             <div class="hero-content">
-                <h1>Welcome to Blissful Existence Healing Acres</h1>
+                <h1>Blissful Existence Healing Acres</h1>
                 <p class="subheadline">Empowering Transformation Through Equine Gestalt Therapy</p>
                 <a href="#services" class="cta-button">Discover Our Services</a>
             </div>
@@ -34,34 +36,49 @@
 
         <section id="about" class="content-section">
             <h2>About Us</h2>
-            <p>We offer transformative equine gestalt therapy designed to foster personal growth and emotional healing.</p>
+            <div class="about-content">
+                <img src="assets/images/about-section.jpg" alt="Peaceful scene at Blissful Existence Healing Acres" class="about-image">
+                <p>At Blissful Existence Healing Acres, we offer transformative equine gestalt therapy designed to foster personal growth and emotional healing. Our unique approach combines the intuitive nature of horses with holistic healing practices to guide you towards a path of self-discovery and inner peace.</p>
+            </div>
         </section>
 
         <section id="services" class="content-section">
             <h2>Our Services</h2>
-            <div class="service-card">
-                <h3>Equine Gestalt Therapy</h3>
-                <p>Utilizes the intuitive nature of horses to guide you towards emotional clarity and personal growth.</p>
-            </div>
-            <div class="service-card">
-                <h3>Holistic Healing Sessions</h3>
-                <p>Includes mindfulness, meditation, and energy work to support overall well-being.</p>
-            </div>
-            <div class="service-card">
-                <h3>Workshops & Retreats</h3>
-                <p>Designed to deepen your connection with yourself and nature.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="assets/images/equine-gestalt-therapy.jpg" alt="Equine Gestalt Therapy session" class="service-image">
+                    <h3>Equine Gestalt Therapy</h3>
+                    <p>Experience the power of horses in guiding you towards emotional clarity and personal growth.</p>
+                </div>
+                <div class="service-card">
+                    <img src="assets/images/holistic-healing-sessions.jpg" alt="Holistic Healing Session" class="service-image">
+                    <h3>Holistic Healing Sessions</h3>
+                    <p>Embrace mindfulness, meditation, and energy work to support your overall well-being.</p>
+                </div>
+                <div class="service-card">
+                    <img src="assets/images/workshops-and-retreats.jpg" alt="Workshops and Retreats" class="service-image">
+                    <h3>Workshops & Retreats</h3>
+                    <p>Immerse yourself in nature and deepen your connection with yourself through our specially designed programs.</p>
+                </div>
             </div>
         </section>
 
         <section id="testimonials" class="content-section">
             <h2>What Our Clients Say</h2>
-            <blockquote>"The sessions were life-changing. The connection with the horses was truly transformative." - Sarah M.</blockquote>
-            <blockquote>"A serene and healing experience. The holistic approach provided lasting change." - John D.</blockquote>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <blockquote>"The sessions were life-changing. The connection with the horses was truly transformative."</blockquote>
+                    <cite>- Sarah M.</cite>
+                </div>
+                <div class="testimonial">
+                    <blockquote>"A serene and healing experience. The holistic approach provided lasting change."</blockquote>
+                    <cite>- John D.</cite>
+                </div>
+            </div>
         </section>
 
         <section id="contact" class="content-section">
             <h2>Contact Us</h2>
-            <p>Feel free to reach out for more information or to schedule a session.</p>
             <form id="contact-form">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
@@ -72,16 +89,33 @@
 
         <section id="client-portal" class="content-section">
             <h2>Client Portal</h2>
+            <form id="login-form">
+                <input type="email" name="login-email" placeholder="Email" required>
+                <input type="password" name="login-password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
             <div id="client-dashboard" style="display: none;">
-                <div id="upcoming-sessions"></div>
-                <div id="documents"></div>
-                <div id="messages"></div>
+                <h3>Welcome to Your Dashboard</h3>
+                <div id="upcoming-sessions">
+                    <h4>Upcoming Sessions</h4>
+                    <!-- Dynamically populated by JavaScript -->
+                </div>
+                <div id="documents">
+                    <h4>Documents</h4>
+                    <!-- Dynamically populated by JavaScript -->
+                </div>
+                <div id="messages">
+                    <h4>Messages</h4>
+                    <!-- Dynamically populated by JavaScript -->
+                </div>
             </div>
         </section>
     </main>
+
     <footer>
-        <p>© 2024 Blissful Existence Healing Acres. All rights reserved.</p>
+        <p>&copy; 2024 Blissful Existence Healing Acres. All rights reserved.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
