@@ -82,7 +82,7 @@ main {
 }
 
 /* Hero Section */
-.hero {
+#home.hero {
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('assets/images/hero.jpg') no-repeat center center;
     background-size: cover;
     height: 100vh;
@@ -181,6 +181,9 @@ main {
 .testimonial {
     text-align: center;
     padding: 2rem;
+    background-image: url('assets/images/testimonials-background.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 blockquote {
@@ -229,6 +232,9 @@ button:hover {
     border-radius: 10px;
     padding: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-image: url('assets/images/client-portal-background.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 /* Footer */
@@ -238,8 +244,10 @@ footer {
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
+    background-image: url('assets/images/footer.jpg');
+    background-size: cover;
+    background-position: center;
 }
-
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {
